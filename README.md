@@ -22,25 +22,23 @@ C:\Users\Your Name>python myfile.py
 
 Indentation refers to the spaces at the beginning of a code line. Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.
 
-| **Concept**              | **Syntax Example**                                       |
-|--------------------------|---------------------------------------------------------|
-| **Proper Indentation**   | ```python
+**Proper Indentation**   
+```python
 if 5 > 2:
     print("Five is greater than two!")
-``` |
-| **Missing Indentation**  | ```python
+``` 
+**Missing Indentation**  
+```python
 if 5 > 2:
 print("Five is greater than two!")
-``` |
+``` 
 
-> **Note:** Python will raise an `IndentationError` if indentation is skipped:
+**Note:** Python will raise an `IndentationError` if indentation is skipped:
 ```python
 if 5 > 2:
 print("Five is greater than two!")
 ```
-
 ---
-
 ## Introduction to Python Comments
 
 - Comments can be used to explain Python code.
@@ -71,12 +69,20 @@ Variables in Python are used to store data values. They act as containers for da
 |--------------------------------------------------------------------------|----------------------------------------|
 | Must begin with a letter (a-z, A-Z) or an underscore (`_`).              | Valid: `my_variable`, `_variable`      |
 |                                                                          | Invalid: `1variable`, `#var`           |
-| Can only contain alphanumeric characters and underscores.               | Valid: `my_var`, `var123`              |
+| Can only contain alphanumeric characters and underscores.                | Valid: `my_var`, `var123`               |
 |                                                                          | Invalid: `my-var`, `var@name`          |
-| Cannot be a reserved keyword.                                           | Reserved keywords: `if`, `else`, etc.  |
-| Case-sensitive.                                                         | `MyVar`, `myvar`, and `MYVAR` differ.  |
+| Cannot be a reserved keyword.                                            | Reserved keywords: `if`, `else`, etc.  |
+| Case-sensitive.                                                          | `MyVar`, `myvar`, and `MYVAR` differ.  |
 
 ---
+
+## Multi Words Variable Names
+| **Case**                              |   **Example**                             |   **Description**                                         |
+|---------------------------------------|-------------------------------------------|-----------------------------------------------------------|
+|Camel Case                             |myVariableName = "John"                    |Each word, except the first, starts with a capital letter  |
+|Pascal Case                            |MyVariableName = "John"                    |Each word starts with a capital letter                     |
+|Snake Case                             |my_variable_name = "John"                  |Each word is separated by an underscore character          |
+
 
 ## Variable Types in Python
 
@@ -95,42 +101,124 @@ Python is dynamically typed, meaning you don't need to declare the type of a var
 
 ---
 
+## Assign Multiple Values
+
+Python allows you to assign values to multiple variables in one line:
+
+```python
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+```
+
+One Value to Multiple Variables
+```python
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z)
+```
+Unpack a Collection
+
+```python
+fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+```
+
+## Python - Output Variables
+
+In Python, you can display the values of variables using the `print()` function. 
+
+**Basic Usage:**
+
+```python
+x = 5
+y = "Hello, World!"
+z = True
+- print(x)  # Output: 5
+- print(y)  # Output: Hello, World!
+- print(z)  # Output: True
+```
+**Multiple Variables:**
+
+You can print multiple variables in a single line using commas to separate them:
+```python
+name = "Alice"
+age = 30
+print("Name:", name, "Age:", age) 
+# Output: Name: Alice Age: 30
+```
+
+**Formatted Output:**
+
+For more control over the output format, use f-strings (formatted string literals):
+```python
+temperature = 25.5
+print(f"The current temperature is {temperature:.2f} degrees Celsius.")
+# Output: The current temperature is 25.50 degrees Celsius.
+```
+
+## Python - Global Variables
+
+**Global Variables** in Python are variables that are defined outside of any function. They can be accessed from anywhere within the program, including inside functions.
+
+**Key Concepts:**
+
+* **Scope:** Global variables have global scope, meaning they are accessible throughout the entire program.
+* **Modification:** 
+    * To modify a global variable within a function, you must use the `global` keyword within the function.
+    * If you don't use `global`, the variable will be treated as a local variable within the function, and any changes made will not affect the global variable.
+
+**Example:**
+
+```python
+# Global variable
+count = 0
+
+def increment():
+    global count  # Declare count as global within the function
+    count += 1
+
+increment()
+print(count)  # Output: 1
+```
+If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.
+```python
+x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+```
 ## Dynamic Typing in Python
 
-Python allows variables to change types during execution, demonstrating its dynamic nature:
+**Dynamic Typing** is a core feature of the Python programming language. It means that you don't need to explicitly declare the data type of a variable before assigning a value to it. Python automatically determines the data type at runtime based on the assigned value.
 
-| **Concept**              | **Syntax Example**                                       |
-|--------------------------|---------------------------------------------------------|
-| **Dynamic Typing**       | ```python
-x = 5          # x is an integer
-x = "Hello"    # x is now a string
-``` |
+**Key Characteristics:**
+
+* **Flexibility:** This flexibility allows for rapid development and experimentation, as you don't need to worry about type declarations.
+* **Implicit Type Conversion:** Python can often implicitly convert data types when necessary, such as converting an integer to a float in arithmetic operations.
+* **Duck Typing:** Python emphasizes "duck typing," which means that if an object "quacks like a duck," it's treated as a duck. In other words, the focus is on the object's behavior rather than its specific type.
+
+**Example:**
+
+```python
+x = 5       # x is an integer
+x = "Hello"  # x is now a string
+x = True     # x is now a boolean
+
+print(type(x))  # Output: <class 'bool'>
+```
 
 > **Tip:** This flexibility can be powerful, but it is essential to use type-checking (`type()` function) when working with complex codebases.
-
----
-
-## Best Practices for Variables
-
-| **Practice**                       | **Example**                          |
-|-------------------------------------|---------------------------------------|
-| Use descriptive variable names.     | `age = 25`, `first_name = "John"`    |
-| Follow snake_case for variable names.| `my_variable`, `user_name`            |
-| Avoid single-character names.       | Except in loops: `for i in range(5):` |
-| Use ALL_CAPS for constants.         | `PI = 3.14159`, `MAX_USERS = 100`     |
-
----
-
-## Exercise
-
-1. Create variables for the following:
-   - Your name
-   - Your age
-   - A list of your favorite fruits
-   - A dictionary with keys `city` and `country` for your location
-
-2. Print the type of each variable using the `type()` function.
-
 ---
 
 ## Summary
