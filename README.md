@@ -1,5 +1,4 @@
-
-# Python Course:
+# Python Course: 
 
 ## Introduction to Python Syntax
 Python syntax can be executed by writing directly in the Command Line:
@@ -21,22 +20,20 @@ C:\Users\Your Name>python myfile.py
 
 ## Python Indentation
 
-Indentation refers to the spaces at the beginning of a code line.
-Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
-Python uses indentation to indicate a block of code.
+Indentation refers to the spaces at the beginning of a code line. Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.
 
 | **Concept**              | **Syntax Example**                                       |
 |--------------------------|---------------------------------------------------------|
-| Proper Indentation       | ```python
+| **Proper Indentation**   | ```python
 if 5 > 2:
     print("Five is greater than two!")
 ``` |
-| Missing Indentation      | ```python
+| **Missing Indentation**  | ```python
 if 5 > 2:
 print("Five is greater than two!")
 ``` |
 
-Python will give you an error if you skip the indentation:
+> **Note:** Python will raise an `IndentationError` if indentation is skipped:
 ```python
 if 5 > 2:
 print("Five is greater than two!")
@@ -52,8 +49,8 @@ print("Five is greater than two!")
 
 | **Concept**              | **Syntax Example**                                       |
 |--------------------------|---------------------------------------------------------|
-| Single-line Comment      | `# This is a comment`                                   |
-| Multi-line Comment       | `"""This is a multi-line comment"""`                  |
+| **Single-line Comment**  | `# This is a comment`                                   |
+| **Multi-line Comment**   | `"""This is a multi-line comment"""`                  |
 
 ---
 
@@ -89,25 +86,27 @@ Python is dynamically typed, meaning you don't need to declare the type of a var
 
 | **Type**       | **Example**                  |
 |----------------|------------------------------|
-| Integer        | `x = 10`                     |
-| Float          | `y = 3.14`                   |
-| String         | `name = "Alice"`            |
-| Boolean        | `is_active = True`           |
-| List           | `numbers = [1, 2, 3]`        |
-| Dictionary     | `data = {"key": "value"}` |
+| **Integer**    | `x = 10`                     |
+| **Float**      | `y = 3.14`                   |
+| **String**     | `name = "Alice"`            |
+| **Boolean**    | `is_active = True`           |
+| **List**       | `numbers = [1, 2, 3]`        |
+| **Dictionary** | `data = {"key": "value"}` |
 
 ---
 
 ## Dynamic Typing in Python
 
-Variables can change types during execution:
+Python allows variables to change types during execution, demonstrating its dynamic nature:
 
 | **Concept**              | **Syntax Example**                                       |
 |--------------------------|---------------------------------------------------------|
-| Dynamic Typing           | ```python
+| **Dynamic Typing**       | ```python
 x = 5          # x is an integer
 x = "Hello"    # x is now a string
 ``` |
+
+> **Tip:** This flexibility can be powerful, but it is essential to use type-checking (`type()` function) when working with complex codebases.
 
 ---
 
