@@ -26,7 +26,10 @@ Python uses indentation to indicate a block of code.
 
 | **Concept**              | **Syntax Example**                                       |
 |--------------------------|---------------------------------------------------------|
-| Proper Indentation       | `if 5 > 2:\n  print("Five is greater than two!")`     |
+| Proper Indentation       | ```python
+if 5 > 2:
+    print("Five is greater than two!")
+``` |
 | Missing Indentation      | ```python
 if 5 > 2:
 print("Five is greater than two!")
