@@ -1,15 +1,15 @@
-# Python Course: 
+# Python Course:
 
 ## Topics:
-* [**Python Syntax**](#introduction-to-python-syntax): Write and execute Python code in the command line or .py files.
-* [**Indentation**](#python-indentation): Python uses indentation to define blocks of code.
-* [**Comments**](#introduction-to-python-comments): Use `#` for single-line and triple quotes for multi-line comments.
-* [**Variables**](#introduction-to-python-variables): Dynamically typed, case-sensitive, and follow naming rules.
-* [**Output Variables**](#python---output-variables): Use `print()` and f-strings for formatted output.
-* [**Global Variables**](#python---global-variables): Use the `global` keyword to modify variables globally.
-* [**Dynamic Typing**](#dynamic-typing-in-python): Python automatically determines variable types at runtime.
+* **[Python Syntax](#python-syntax):** Write and execute Python code in the command line or .py files.
+* **[Indentation](#python-indentation):** Python uses indentation to define blocks of code.
+* **[Comments](#introduction-to-python-comments):** Use # for single-line and triple quotes for multi-line comments.
+* **[Variables](#introduction-to-python-variables):** Dynamically typed, case-sensitive, and follow naming rules.
+    * **[Output Variables](#python---output-variables):** Use print() and f-strings for formatted output.
+    * **[Global Variables](#python---global-variables):** Use the global keyword to modify variables globally.
+    * **[Dynamic Typing](#dynamic-typing-in-python):** Python automatically determines variable types at runtime.
 
-## Introduction to Python Syntax
+## Python Syntax
 Python syntax can be executed by writing directly in the Command Line:
 ```python
 >>> print("Hello, World!")
@@ -42,11 +42,7 @@ if 5 > 2:
 print("Five is greater than two!")
 ``` 
 
-**Note:** Python will raise an `IndentationError` if indentation is skipped:
-```python
-if 5 > 2:
-print("Five is greater than two!")
-```
+> **Note:** Python will raise an `IndentationError` if indentation is skipped:
 ---
 ## Introduction to Python Comments
 
@@ -99,14 +95,14 @@ Python is dynamically typed, meaning you don't need to declare the type of a var
 
 ### Examples of Variable Assignments:
 
-| **Type**       | **Example**                  |
-|----------------|------------------------------|
-| **Integer**    | `x = 10`                     |
-| **Float**      | `y = 3.14`                   |
-| **String**     | `name = "Alice"`            |
-| **Boolean**    | `is_active = True`           |
-| **List**       | `numbers = [1, 2, 3]`        |
-| **Dictionary** | `data = {"key": "value"}` |
+| **Type**       | **Example**                  | **Use Case**                                                                 | **Sample**                       |
+|----------------|------------------------------|-------------------------------------------------------------------------------|-----------------------------------|
+| **Integer**    | `x = 10`                     | Representing quantities, such as `age = 25` or `number_of_items = 100`.       | `x + 5` for calculations         |
+| **Float**      | `y = 3.14`                   | Handling measurements like `temperature = 36.6` or calculations like `area`. | `y * 2` for scaling values       |
+| **String**     | `name = "Alice"`            | Storing text data, such as `message = "Hello, World!"` or `filename = "data.txt"`. | Concatenating `name + " Doe"`    |
+| **Boolean**    | `is_active = True`           | Representing states, e.g., `is_logged_in = False` or toggles like `feature_enabled`. | Conditional checks: `if is_active:` |
+| **List**       | `numbers = [1, 2, 3]`        | Managing collections, e.g., `shopping_list = ["milk", "eggs", "bread"]`.     | Iterating: `for num in numbers:` |
+| **Dictionary** | `data = {"key": "value"}` | Storing mappings, such as `user = {"name": "Alice", "age": 30}` or configurations. | Accessing: `data["key"]`       |
 
 ---
 
@@ -148,9 +144,9 @@ In Python, you can display the values of variables using the `print()` function.
 x = 5
 y = "Hello, World!"
 z = True
-- print(x)  # Output: 5
-- print(y)  # Output: Hello, World!
-- print(z)  # Output: True
+print(x)  # Output: 5
+print(y)  # Output: Hello, World!
+print(z)  # Output: True
 ```
 **Multiple Variables:**
 
@@ -229,7 +225,3 @@ print(type(x))  # Output: <class 'bool'>
 
 > **Tip:** This flexibility can be powerful, but it is essential to use type-checking (`type()` function) when working with complex codebases.
 ---
-
-## Summary
-
-Variables are the foundation of any Python program. By understanding how to create, name, and use variables effectively, you can write clean and efficient Python code.
