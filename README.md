@@ -1,5 +1,14 @@
 # Python Course: 
 
+## Topics:
+* [**Python Syntax**](#introduction-to-python-syntax): Write and execute Python code in the command line or .py files.
+* [**Indentation**](#python-indentation): Python uses indentation to define blocks of code.
+* [**Comments**](#introduction-to-python-comments): Use `#` for single-line and triple quotes for multi-line comments.
+* [**Variables**](#introduction-to-python-variables): Dynamically typed, case-sensitive, and follow naming rules.
+* [**Output Variables**](#python---output-variables): Use `print()` and f-strings for formatted output.
+* [**Global Variables**](#python---global-variables): Use the `global` keyword to modify variables globally.
+* [**Dynamic Typing**](#dynamic-typing-in-python): Python automatically determines variable types at runtime.
+
 ## Introduction to Python Syntax
 Python syntax can be executed by writing directly in the Command Line:
 ```python
