@@ -1,6 +1,59 @@
-# Python Course: Variables
+# Python Course: 
 
-## Introduction to Variables
+## Introduction to Python Syntax
+Python syntax can be executed by writing directly in the Command Line:
+```python
+>>> print("Hello, World!")
+Hello, World!
+```
+Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:
+```python
+C:\Users\Your Name>python myfile.py
+```
+
+| **Concept**              | **Syntax Example**                                       |
+|--------------------------|---------------------------------------------------------|
+| Print Statement          | `print("Hello, World!")`                               |
+| Running a Python File    | `python myfile.py`                                      |
+
+---
+
+## Python Indentation
+
+Indentation refers to the spaces at the beginning of a code line.
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+Python uses indentation to indicate a block of code.
+
+| **Concept**              | **Syntax Example**                                       |
+|--------------------------|---------------------------------------------------------|
+| Proper Indentation       | `if 5 > 2:\n  print("Five is greater than two!")`     |
+| Missing Indentation      | ```python
+if 5 > 2:
+print("Five is greater than two!")
+``` |
+
+Python will give you an error if you skip the indentation:
+```python
+if 5 > 2:
+print("Five is greater than two!")
+```
+
+---
+
+## Introduction to Python Comments
+
+- Comments can be used to explain Python code.
+- Comments can be used to make the code more readable.
+- Comments can be used to prevent execution when testing code.
+
+| **Concept**              | **Syntax Example**                                       |
+|--------------------------|---------------------------------------------------------|
+| Single-line Comment      | `# This is a comment`                                   |
+| Multi-line Comment       | `"""This is a multi-line comment"""`                  |
+
+---
+
+## Introduction to Python Variables
 
 Variables in Python are used to store data values. They act as containers for data that can be referenced and manipulated in a program.
 
@@ -45,10 +98,12 @@ Python is dynamically typed, meaning you don't need to declare the type of a var
 
 Variables can change types during execution:
 
-```python
+| **Concept**              | **Syntax Example**                                       |
+|--------------------------|---------------------------------------------------------|
+| Dynamic Typing           | ```python
 x = 5          # x is an integer
 x = "Hello"    # x is now a string
-```
+``` |
 
 ---
 
