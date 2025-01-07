@@ -8,6 +8,7 @@
     * **[Output Variables](#python---output-variables):** Use print() and f-strings for formatted output.
     * **[Global Variables](#python---global-variables):** Use the global keyword to modify variables globally.
     * **[Dynamic Typing](#dynamic-typing-in-python):** Python automatically determines variable types at runtime.
+* **[DataTypes](#python-data-types):** Variables can store data of different types, and different types can do different things..
 
 ## Python Syntax
 Python syntax can be executed by writing directly in the Command Line:
@@ -84,9 +85,9 @@ Variables in Python are used to store data values. They act as containers for da
 ## Multi Words Variable Names
 | **Case**                              |   **Example**                             |   **Description**                                         |
 |---------------------------------------|-------------------------------------------|-----------------------------------------------------------|
-|Camel Case                             |myVariableName = "John"                    |Each word, except the first, starts with a capital letter  |
-|Pascal Case                            |MyVariableName = "John"                    |Each word starts with a capital letter                     |
-|Snake Case                             |my_variable_name = "John"                  |Each word is separated by an underscore character          |
+|Camel Case                             |`myVariableName` = "John"                    |Each word, except the first, starts with a capital letter  |
+|Pascal Case                            |`MyVariableName` = "John"                    |Each word starts with a capital letter                     |
+|Snake Case                             |`my_variable_name` = "John"                  |Each word is separated by an underscore character          |
 
 
 ## Variable Types in Python
@@ -110,29 +111,14 @@ Python is dynamically typed, meaning you don't need to declare the type of a var
 
 Python allows you to assign values to multiple variables in one line:
 
-```python
-x, y, z = "Orange", "Banana", "Cherry"
-print(x)
-print(y)
-print(z)
-```
+| Multiple Variables                         | One Value to Multiple Variables         | Unpack a Collection                      |
+|--------------------------------------------|-----------------------------------------|------------------------------------------|
+| x, y, z = "Orange", "Banana", "Cherry"     | x = y = z = "Orange"                    | fruits = ["apple", "banana", "cherry"]   |
+| print(x)                                   | print(x)                                | x, y, z = fruits                         |
+| print(y)                                   | print(y)                                | print(x)                                 |
+| print(z)                                   | print(z)                                | print(y)                                 |
+|                                            |                                         | print(z)                                 |
 
-One Value to Multiple Variables
-```python
-x = y = z = "Orange"
-print(x)
-print(y)
-print(z)
-```
-Unpack a Collection
-
-```python
-fruits = ["apple", "banana", "cherry"]
-x, y, z = fruits
-print(x)
-print(y)
-print(z)
-```
 
 ## Python - Output Variables
 
@@ -224,4 +210,40 @@ print(type(x))  # Output: <class 'bool'>
 ```
 
 > **Tip:** This flexibility can be powerful, but it is essential to use type-checking (`type()` function) when working with complex codebases.
+---
+
+# Python Data Types
+
+Python provides several built-in data types that allow developers to store and manipulate different kinds of data effectively. Below is an overview of Python's fundamental data types.
+
+| **Category**        | **Type**        | **Description**           | **Example**                                  |
+|---------------------|-----------------|---------------------------|----------------------------------------------|
+| **Numeric Types**   | `int`          | Represents whole numbers (positive, negative, or zero).            | x = 10 <br> y = -5 <br> z = 0                                                 |
+|                     | `float`        | Represents decimal numbers.                                        | x = 3.14 <br> y = -2.71                                                       |
+|                     | `complex`      | Represents complex numbers with real and imaginary parts.          | z = 3 + 4j <br> print(z.real)  # Output: 3.0 <br> print(z.imag)  # Output: 4.0|
+| **Sequence Types**  | `str` (String) | Represents a sequence of characters. Strings are immutable.        | name = "Alice" <br> greeting = 'Hello, World!'                                |
+|                     | `list`         | Represents an ordered, mutable collection of items.                | numbers = [1, 2, 3, 4] <br> mixed = [1, "hello", 3.14]                        |
+|                     | `tuple`        | Represents an ordered, immutable collection of items.              | coordinates = (10, 20) <br> names = ("Alice", "Bob")                          |
+|                     | `range`     | Represents an immutable sequence of numbers, typically used in loops. | for i in range(5): <br> print(i)  # Outputs 0, 1, 2, 3, 4                     |
+| **Set Types**       | `set`          | Represents an unordered collection of unique items.                | fruits = {"apple", "banana", "cherry"}                                        |
+|                     | `frozenset`    | Immutable version of a set.                                        | frozen_fruits = frozenset(["apple", "banana", "cherry"])                      |
+| **Mapping Type**    | `dict`         | Represents a collection of key-value pairs.                        | student = {"name": "Alice", "age": 20}                                        |
+| **Boolean Type**    | `bool`         | Represents `True` or `False` values.                               | is_active = True <br> is_admin = False                                        |
+| **Binary Types**    | `bytes`        | Represents immutable sequences of bytes.                           | data = b"hello"                                                               |
+|                     | `bytearray`    | Represents mutable sequences of bytes.                             | data = bytearray(b"hello") <br> data[0] = 104  # Modifies the first byte      |
+|                     | `memoryview`   | Provides a memory view of a bytes object.                          | data = memoryview(b"hello")                                                   |
+| **None Type**       | `NoneType`     | Represents the absence of a value.                                 | result = None                                                                 |
+
+## Type Checking
+- Use the `type()` function to check the type of a variable.
+  ```python
+  x = 10
+  print(type(x))  # Output: <class 'int'>
+  ```
+
+- Use `isinstance()` to check if an object belongs to a specific type.
+  ```python
+  x = 10
+  print(isinstance(x, int))  # Output: True
+  ```
 ---
