@@ -9,7 +9,7 @@
     * **[Global Variables](#python---global-variables):** Use the global keyword to modify variables globally.
     * **[Dynamic Typing](#dynamic-typing-in-python):** Python automatically determines variable types at runtime.
 * **[DataTypes](#python-data-types):** Variables can store data of different types, and different types can do different things..
-
+* **[Python Casting](#python-casting):** The type() functions are used to cast one type into another.
 ## Python Syntax
 Python syntax can be executed by writing directly in the Command Line:
 ```python
@@ -249,8 +249,6 @@ Python provides several built-in data types that allow developers to store and m
 ## Python Casting
 
 There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
-
-# Python Casting
 
 | **Type**         | **Description**                          | **Example**                                                             |
 |------------------|------------------------------------------|-------------------------------------------------------------------------|
