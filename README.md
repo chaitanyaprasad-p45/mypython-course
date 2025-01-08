@@ -73,10 +73,8 @@ Variables in Python are used to store data values. They act as containers for da
 
 | **Rule**                                                                 | **Examples**                           |
 |--------------------------------------------------------------------------|----------------------------------------|
-| Must begin with a letter (a-z, A-Z) or an underscore (`_`).              | Valid: `my_variable`, `_variable`      |
-|                                                                          | Invalid: `1variable`, `#var`           |
-| Can only contain alphanumeric characters and underscores.                | Valid: `my_var`, `var123`               |
-|                                                                          | Invalid: `my-var`, `var@name`          |
+| Must begin with a letter (a-z, A-Z) or an underscore (`_`).              | Valid: `my_variable`, `_variable`   <br>  Invalid: `1variable`, `#var`  |
+| Can only contain alphanumeric characters and underscores.                | Valid: `my_var`, `var123` <br>   Invalid: `my-var`, `var@name`            |
 | Cannot be a reserved keyword.                                            | Reserved keywords: `if`, `else`, etc.  |
 | Case-sensitive.                                                          | `MyVar`, `myvar`, and `MYVAR` differ.  |
 
