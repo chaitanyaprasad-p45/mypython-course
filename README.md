@@ -253,7 +253,7 @@ There may be times when you want to specify a type on to a variable. This can be
 # Python Casting
 
 | **Type**         | **Description**                          | **Example**                                                             |
-|-------------------|------------------------------------|-----------------------------------------------------------------------------------------------|
+|------------------|------------------------------------------|-------------------------------------------------------------------------|
 | **int()**        | Converts a value to an integer. Non-integer values are truncated.                  | `x = int(3.14)`  → `3` <br> `y = int("10")` → `10`          |
 | **float()**      | Converts a value to a floating-point number.                                       | `x = float(5)`  → `5.0` <br> `y = float("3.14")` → `3.14`            |
 | **complex()**    | Converts a number or string into a complex number (`a + bj`).                      | `x = complex(3, 4)` → `(3+4j)` <br> `y = complex("5+2j")` → `(5+2j)`             |
