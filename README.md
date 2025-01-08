@@ -245,3 +245,25 @@ Python provides several built-in data types that allow developers to store and m
   print(isinstance(x, int))  # Output: True
   ```
 ---
+
+## Python Casting
+
+There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
+
+# Python Casting
+
+| **Type**         | **Description**                          | **Example**                                                             |
+|-------------------|------------------------------------|-----------------------------------------------------------------------------------------------|
+| **int()**        | Converts a value to an integer. Non-integer values are truncated.                  | `x = int(3.14)`  → `3` <br> `y = int("10")` → `10`          |
+| **float()**      | Converts a value to a floating-point number.                                       | `x = float(5)`  → `5.0` <br> `y = float("3.14")` → `3.14`            |
+| **complex()**    | Converts a number or string into a complex number (`a + bj`).                      | `x = complex(3, 4)` → `(3+4j)` <br> `y = complex("5+2j")` → `(5+2j)`             |
+| **str()**        | Converts a value to a string representation.                                       | `x = str(10)` → `"10"` <br> `y = str(3.14)` → `"3.14"`                   |
+| **bool()**       | Converts a value to a boolean (`True` or `False`).                                 | `x = bool(1)` → `True` <br> `y = bool(0)` → `False`                |
+| **list()**       | Converts an iterable (e.g., string, tuple) into a list.                            | `x = list("abc")` → `['a', 'b', 'c']` <br> `y = list((1, 2, 3))` → `[1, 2, 3]` |
+| **tuple()**      | Converts an iterable (e.g., list, string) into a tuple.                            | `x = tuple([1, 2, 3])` → `(1, 2, 3)` <br> `y = tuple("abc")` → `('a', 'b', 'c')`       |
+| **set()**        | Converts an iterable into a set, removing duplicates.                              | `x = set("aabbcc")` → `{'a', 'b', 'c'}` <br> `y = set([1, 2, 2, 3])` → `{1, 2, 3}`    |
+| **dict()**       | Converts a collection of key-value pairs (e.g., list of tuples) into a dictionary. | `x = dict([("name", "Alice"), ("age", 25)])` → `{'name': 'Alice', 'age': 25}`         |
+| **bytes()**      | Converts an object (e.g., string, iterable) into immutable bytes.                  | `x = bytes("hello", "utf-8")` → `b'hello'` <br> `y = bytes([65, 66, 67])` → `b'ABC'`   |
+| **bytearray()**  | Converts an object (e.g., string, iterable) into a mutable sequence of bytes.      | `x = bytearray("hello", "utf-8")` → `bytearray(b'hello')`                      |
+| **frozenset()**  | Converts an iterable into an immutable set.                                        | `x = frozenset([1, 2, 3])` → `frozenset({1, 2, 3})`                            |
+
