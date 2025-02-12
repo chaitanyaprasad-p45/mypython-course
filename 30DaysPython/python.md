@@ -1,7 +1,7 @@
-##	Built in functions
+#	Built in functions
 *	In Python we have lots of built-in functions. Built-in functions are globally available for your use that mean you can make use of the built-in functions without importing or configuring. Some of the most commonly used Python built-in functions are the following: print(), len(), type(), int(), float(), str(), input(), list(), dict(), min(), max(), sum(), sorted(), open(), file(), help(), and dir(). In the following table you will see an exhaustive list of Python built-in functions taken from python documentation. https://docs.python.org/3.9/library/functions.html
 
-##  Variables
+#  Variables
 
 Variables store data in a computer memory. Mnemonic variables are recommended to use in many programming languages. A mnemonic variable is a variable name that can be easily remembered and associated. A variable refers to a memory address in which data is stored. Number at the beginning, special character, hyphen are not allowed when naming a variable. A variable can have a short name (like x, y, z), but a more descriptive name (firstname, lastname, age, country) is highly recommended.
 
@@ -159,7 +159,7 @@ print(True)
 print(False)
 ```
 
-##  Operators
+#  Operators
 
 Python language supports several types of operators. In this section, we will focus on few of them.
 
@@ -239,5 +239,6 @@ Unlike other programming languages python uses keywords and, or and not for logi
 | `and`    | Returns `True` if both conditions are `True` | `x < 5 and x < 10`               | Evaluates both conditions; returns `True` only if both are `True`. Example: `x = 3; x < 5 and x < 10  # True` |
 | `or`     | Returns `True` if at least one condition is `True` | `x < 5 or x < 4`                 | Evaluates both conditions; returns `True` if at least one is `True`. Example: `x = 3; x < 5 or x < 2  # True` |
 | `not`    | Reverses the result; returns `False` if the condition is `True` | `not(x < 5 and x < 10)`          | If the condition is `True`, `not` makes it `False`, and vice versa. Example: `x = 3; not(x < 5 and x < 10)  # False` |
-
 ---
+
+# Strings
