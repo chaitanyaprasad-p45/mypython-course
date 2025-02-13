@@ -6,8 +6,8 @@ Welcome to the **Python Learning Journey**! This guide contains structured lesso
 
 | Day | Topics | Link |
 |----|----------------------------------|----------------|
-| 01 | Introduction | [Introduction](01_Introduction.md) |
-| 02 | Variables, Built-in Functions | [Variables & Functions](02_Variables_Functions.md) |
+| 01 | Introduction | [Introduction](Day1-Introduction.py) |
+| 02 | Variables, Built-in Functions | [Variables & Functions](Day2-Variables.md) |
 | 03 | Operators | [Operators](03_Operators.md) |
 | 04 | Strings | [Strings](04_Strings.md) |
 | 05 | Lists | [Lists](05_Lists.md) |
