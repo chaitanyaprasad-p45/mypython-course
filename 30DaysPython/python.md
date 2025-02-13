@@ -1,6 +1,40 @@
 # Python Learning Journey
 
-...(Table of Contents - Same as before)...
+## **Table of Contents**
+
+| Day | Topic | Examples |
+|-----|-------|----------|
+| 1 | [Introduction](#Day1-Introduction.py) | Automating File Renaming, Simple Calculator, Web Scraping |
+| 2 | [Variables & Functions](#Day2-Variables.md) | Temperature Converter, User Input, Dynamic Greeting |
+| 3 | [Operators](#Day3-Operators.md) | Arithmetic Operations, Comparison, Logical Operators |
+| 4 | [Strings](#Day4-Strings.md) | String Formatting, Palindrome Check, Word Count |
+| 5 | [Lists](#5-lists) | Shopping List, List Sorting, Matrix Operations |
+| 6 | [Tuples](#6-tuples) | Immutable Data, Coordinates, Returning Multiple Values |
+| 7 | [Sets](#7-sets) | Unique Elements, Set Operations, Removing Duplicates |
+| 8 | [Dictionaries](#8-dictionaries) | Student Database, Word Frequency, Nested Dictionaries |
+| 9 | [Conditionals](#9-conditionals) | Grade Calculator, Login System, Odd/Even Check |
+| 10 | [Loops](#10-loops) | Multiplication Table, Number Guessing Game, Sum of Numbers |
+| 11 | [Functions](#11-functions) | Factorial, Prime Check, Recursive Fibonacci |
+| 12 | [Modules](#12-modules) | Math Module, Random Number Generator, OS Module |
+| 13 | [List Comprehension](#13-list-comprehension) | Squares of Numbers, Filter Even Numbers, Flatten Matrix |
+| 14 | [Higher Order Functions](#14-higher-order-functions) | Map, Filter, Reduce, Custom Sorting |
+| 15 | [Type Errors](#15-type-errors) | Handling Type Errors, Dynamic Type Checking |
+| 16 | [Date Time](#16-date-time) | Current Date, Age Calculator, Countdown Timer |
+| 17 | [Exception Handling](#17-exception-handling) | Divide by Zero, File Not Found, Custom Exceptions |
+| 18 | [Regular Expressions](#18-regular-expressions) | Email Validation, Phone Number Extraction, Text Cleaning |
+| 19 | [File Handling](#19-file-handling) | Read/Write Files, CSV Processing, Log File Analysis |
+| 20 | [Package Manager](#20-package-manager) | Install Packages, Create Requirements File, Virtual Environment |
+| 21 | [Classes & Objects](#21-classes--objects) | Bank Account, Car Class, Inheritance Example |
+| 22 | [Web Scraping](#22-web-scraping) | Scrape Website Titles, Extract Links, Parse HTML Tables |
+| 23 | [Virtual Environment](#23-virtual-environment) | Create Virtual Environment, Activate/Deactivate, Install Dependencies |
+| 24 | [Statistics](#24-statistics) | Mean/Median/Mode, Standard Deviation, Data Distribution |
+| 25 | [Pandas](#25-pandas) | DataFrame Creation, Data Filtering, CSV Import/Export |
+| 26 | [Python Web](#26-python-web) | Flask Hello World, URL Routing, Form Handling |
+| 27 | [Python & MongoDB](#27-python--mongodb) | Connect to MongoDB, Insert Data, Query Data |
+| 28 | [API](#28-api) | Consume REST API, Parse JSON, API Authentication |
+| 29 | [Building API](#29-building-api) | Flask REST API, CRUD Operations, Error Handling |
+| 30 | [Conclusions](#30-conclusions) | Summary, Next Steps, Resources |
+---
 
 ## 📖 Topic Descriptions (with Detailed Real-Time Examples)
 
