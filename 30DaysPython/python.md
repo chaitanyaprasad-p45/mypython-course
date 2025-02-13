@@ -4,10 +4,10 @@
 
 | Day | Topic | Examples |
 |-----|-------|----------|
-| 1 | [Introduction](#Day1-Introduction.py) | Automating File Renaming, Simple Calculator, Web Scraping |
-| 2 | [Variables & Functions](#Day2-Variables.md) | Temperature Converter, User Input, Dynamic Greeting |
-| 3 | [Operators](#Day3-Operators.md) | Arithmetic Operations, Comparison, Logical Operators |
-| 4 | [Strings](#Day4-Strings.md) | String Formatting, Palindrome Check, Word Count |
+| 1 | [Introduction](Day1-Introduction.py) | Automating File Renaming, Simple Calculator, Web Scraping |
+| 2 | [Variables & Functions](Day2-Variables.md) | Temperature Converter, User Input, Dynamic Greeting |
+| 3 | [Operators](Day3-Operators.md) | Arithmetic Operations, Comparison, Logical Operators |
+| 4 | [Strings](Day4-Strings.md) | String Formatting, Palindrome Check, Word Count |
 | 5 | [Lists](#5-lists) | Shopping List, List Sorting, Matrix Operations |
 | 6 | [Tuples](#6-tuples) | Immutable Data, Coordinates, Returning Multiple Values |
 | 7 | [Sets](#7-sets) | Unique Elements, Set Operations, Removing Duplicates |
